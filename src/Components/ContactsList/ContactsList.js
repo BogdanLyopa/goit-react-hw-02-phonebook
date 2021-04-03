@@ -1,10 +1,4 @@
-const ContactsListItem = ({ id, name, number, onRemove }) => {
-  return (
-    <li>
-      {name}:{number} <button onClick={() => onRemove(id)}>remove</button>
-    </li>
-  );
-};
+import ContactsListItem from './ContactsListItem/ContactsListItem';
 
 const ContactsList = ({ contacts, onRemove }) => {
   if (contacts.length === 0) return null;
